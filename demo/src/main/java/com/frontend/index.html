@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+  <h2>Game price searcher</h2>
+  <form>
+    <label for="fname">Game name:</label><br>
+    <input type="text" id="gameName" name="gameName"><br>
+    <label for="lname">region(ex: us):</label><br>
+    <input type="text" id="region" name="region"><br><br>
+    <input type="button" value="button" onclick="searchGame()">
+  </form> 
+
+  <!--<button type="button" onclick="searchGame()"></button>-->
+</div>
+
+<script>
+    function searchGame() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) 
+    {
+        document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  
+  //xhttp.("GET", "App.java", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html> 

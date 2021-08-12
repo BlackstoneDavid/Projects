@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "WEB-INF",
+			"path": "../../../WEB-INF"
+		},
+		{
+			"name": "ajaxtesting",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
